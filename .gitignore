@@ -4,8 +4,6 @@
 *.jar
 bin/
 build/
-.classpath
-.project
 .settings/
 
 # Eclipse
