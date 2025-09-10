@@ -1,4 +1,4 @@
-# Java Study – README
+# Java Study – 대전 1반
 
 ---
 
