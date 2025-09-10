@@ -1,4 +1,4 @@
-# Java Study – 대전 1반
+# Java Study
 
 ---
 
