@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="src/" kind="src" path="Chapter06_Inheritance"/>
+	<classpathentry excluding="src/" kind="src" path="Chapter08_Interface_Generic"/>
+	<classpathentry excluding="src/|src/" kind="src" path="Chapter02_Array"/>
+	<classpathentry excluding="src/" kind="src" path="Chapter05_ObjectArray_Practice"/>
+	<classpathentry excluding="src/" kind="src" path="Chapter07_Polymorphism_Abstract"/>
+	<classpathentry excluding="src/|src/" kind="src" path="Chapter04_ObjectArray_Management"/>
+	<classpathentry excluding="src/|src/" kind="src" path="Chapter03_Class_Object"/>
+	<classpathentry kind="src" path="Chapter02_Array/src"/>
+	<classpathentry kind="src" path="Chapter01_Basics_ControlFlow/src"/>
+	<classpathentry kind="src" path="Chapter03_Class_Object/src"/>
+	<classpathentry kind="src" path="Chapter04_ObjectArray_Management/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
