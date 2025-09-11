@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_ch {
+public class Main_yi {
     private static String name;
 
     public static class ReadName{

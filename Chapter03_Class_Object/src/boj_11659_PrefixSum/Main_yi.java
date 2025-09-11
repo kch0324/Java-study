@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_ch {
+public class Main_yi {
 	static class PlusArr{
         private int[] arr;
 
