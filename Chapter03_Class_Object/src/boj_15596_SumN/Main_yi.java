@@ -1,6 +1,6 @@
 package boj_15596_SumN;
 
-public class Main_ch {
+public class Main_yi {
 	long sum(int[] a) {
         long result = 0;
         for (int i = 0; i < a.length; i++) {

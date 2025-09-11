@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_ch {
+public class Main_yi {
 	private static int ps = 247;
     private static String name = "onething42";
     public static void main(String[] args) throws IOException{

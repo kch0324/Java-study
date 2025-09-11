@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_ch {
+public class Main_yi {
 	public void star(int a){
         int starCnt = 1;
         int spaceCnt = 2*a - 2;
@@ -39,7 +39,7 @@ public class Main_ch {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        Main_ch m = new Main_ch();
+        Main_yi m = new Main_yi();
         m.star(n);
     }
 } 
