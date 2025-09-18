@@ -66,7 +66,7 @@ public class Main_bh {
 		for(int i = 0; i < n; i++) {
 			String[] input = br.readLine().split(" ");
 			// 배열 안의 각 요소는 null 상태 (즉, Person_bh 객체가 아직 없음)
-			arr[i] = new Person_bh(i, Integer.parseInt(input[0]),input[1]);
+			arr[i] = new Person_bh(i, Integer.parseInt(input[0]), input[1]);
 //			arr[i].setJoin(i+1);
 //			arr[i].setAge(Integer.parseInt(input[0]));
 //			arr[i].setName(input[1]);
