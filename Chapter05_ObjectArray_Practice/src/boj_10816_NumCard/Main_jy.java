@@ -17,19 +17,17 @@ public class Main_jy {
         }
         
         int M = Integer.parseInt(br.readLine());
-        st = new StringTokenizer(br.readLine()); // ⭐ 여기서 새로 만들어야 함
+        st = new StringTokenizer(br.readLine()); //  여기서 새로 만들어야 함...
         int[] arr2 = new int[M];
         for (int j = 0; j < M; j++) {
             arr2[j] = Integer.parseInt(st.nextToken());
         }
         
-        // 카드 개수 세기 (Counter 역할)
         HashMap<Integer, Integer> count = new HashMap<>();
         for (int key : arr1) {
             count.put(key, count.getOrDefault(key, 0) + 1);
         }
         
-        // 질의에 대한 답 출력
         StringBuilder sb = new StringBuilder();
         for (int q : arr2) {
             sb.append(count.getOrDefault(q, 0)).append(" ");
