@@ -1,3 +1,5 @@
+package boj_15596_SumN;
+
 public class Main_ch {
 
     long sum(int[] a) {
