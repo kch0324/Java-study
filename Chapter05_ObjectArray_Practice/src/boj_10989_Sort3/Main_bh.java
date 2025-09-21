@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
-// 우와 얘도 시간초과...
 public class Main_bh {
 
 	public static void main(String[] args) throws IOException {
@@ -25,12 +24,10 @@ public class Main_bh {
 		Arrays.sort(arr);
 
 		for (int i : arr) {
-			bw.write(i);
-			bw.flush(); // 출력 후 버퍼 비움
+			bw.write(i+"\n");
 		}
 
 		bw.close();
 		br.close();
 	}
-
 }
