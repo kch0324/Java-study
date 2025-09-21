@@ -23,28 +23,18 @@ class Person_bh {
 	public int getJoin() {
 		return join;
 	}
-
-
 	public void setJoin(int join) {
 		this.join = join;
 	}
-
-
 	public int getAge() {
 		return age;
 	}
-
-
 	public void setAge(int age) {
 		this.age = age;
 	}
-
-
 	public String getName() {
 		return name;
 	}
-
-
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -92,8 +82,5 @@ public class Main_bh {
 		for (Person_bh person : arr) {
 			System.out.println(person.toString());
 		}
-
 	}
-
 }
-
