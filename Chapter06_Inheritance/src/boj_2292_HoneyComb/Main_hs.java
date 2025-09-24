@@ -9,20 +9,29 @@ import java.util.StringTokenizer;
 
 public class Main_hs {
 	
+	static class HoneyComb {
+		
+		public long solve (long n) {
+			long i = 1;
+			long max = 1;
+			while (n > max) {
+				max += i * 6;
+				i++;
+			}
+			return i;
+		} 
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int N = Integer.parseInt(br.readLine());
+		long N = Long.parseLong(br.readLine());
 		
-		int i = 1;
-		int max = 1;
-		while (N > max) {
-			max += i * 6;
-			i++;
-		}
+		HoneyComb result = new HoneyComb();
+		long answer = result.solve(N);
 		
-		bw.write(String.valueOf(i));
+		bw.write(String.valueOf(answer));
 		bw.newLine();
 		bw.flush();
 		bw.close();	

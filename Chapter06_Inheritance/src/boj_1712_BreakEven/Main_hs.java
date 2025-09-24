@@ -9,35 +9,29 @@ import java.util.*;
 
 public class Main_hs {
 	
+	static class BreakEven {
+		public long solve(long a, long b, long c) {
+			if (c <= b) {
+				return -1;
+			}
+			else {
+				return a / (c - b) + 1;
+			}
+		}
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		long x = Long.parseLong(br.readLine());
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
+		long A = Long.parseLong(st.nextToken());
+		long B = Long.parseLong(st.nextToken());
+		long C = Long.parseLong(st.nextToken());
 		
-		long end = 1;
-		long diff = 1;
-		
-		while (x > end) {
-			diff += 1;
-			end += diff;
-		}
-		
-		long delta = end - x;
-		long child;
-		long par;
-		
-		if (diff % 2 == 0) {
-			child = diff - delta;
-			par = 1 + delta;
-			}
-		else {
-			child = 1 + delta;
-			par = diff - delta;
-			}
-		
-		String answer = child + "/" + par;
+		BreakEven result = new BreakEven();
+		long answer = result.solve(A, B, C); 
 		
 		bw.write(String.valueOf(answer));
 		bw.newLine();
