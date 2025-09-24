@@ -9,6 +9,19 @@ import java.util.*;
 
 public class Main_hs {
 	
+	static class Snail {
+		
+		public long solve(long a, long b, long v) {
+			long days = (v - a) / (a - b);
+			
+			if ((v - a) % (a - b) != 0) {
+				days++;
+			}
+			days++;		
+			return days;
+		}
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -19,12 +32,8 @@ public class Main_hs {
 		long B = Long.parseLong(st.nextToken());
 		long V = Long.parseLong(st.nextToken());
 		
-		long answer = (V - A) / (A-B);
-		
-		if ((V - A) % (A-B) != 0) {
-			answer++;
-		}
-		answer++;
+		Snail result = new Snail();
+		long answer = result.solve(A, B, V); 
 		
 		bw.write(String.valueOf(answer));
 		bw.newLine();

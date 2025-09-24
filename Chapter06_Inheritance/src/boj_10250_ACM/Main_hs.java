@@ -4,7 +4,19 @@ import java.util.*;
 import java.io.*;
 
 public class Main_hs {
-
+	
+	static class ACM{
+		public int solve(int h, int m, int n) {
+			int floor = n % h;
+			if (floor == 0) {
+				floor = h;				
+			}
+			int room = (n - 1) / h + 1;
+			
+			return floor * 100 + room;
+		}
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,20 +29,13 @@ public class Main_hs {
 			int M = Integer.parseInt(st.nextToken());
 			int N = Integer.parseInt(st.nextToken());
 			
-			int floor = N % H;
-			if (floor == 0) {
-				floor = H;				
-			}
-			int room = (N - 1) / H + 1;
-			
-			int answer = floor * 100 + room;
+			ACM result = new ACM();
+			int answer = result.solve(H, M, N);
 			
 			bw.write(String.valueOf(answer));
 			bw.newLine();
-			
 		}
 		bw.flush();
 		bw.close();
 	}
-
 }
